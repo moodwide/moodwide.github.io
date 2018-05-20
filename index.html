@@ -14,187 +14,125 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <style type="text/css">
-    body {}
-
-    #cover {
-        background-image: url('img/cover.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 850px;
-        width: 100%;
+    .slide {
+        overflow: hidden;
+        position: absolute;
+        top: 10%;
+        /*border: 1px solid gray;*/
+        min-height: 400px;
     }
 
-    #incentive {
-        width: 100%;
-        min-height: 700px;
+    #one {
+        right: 30%;
+        z-index: 3;
     }
 
-    #speaker {
-        background-image: url('img/speaker.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 700px;
-        width: 100%;
+    #two {
+        right: 10%;
+        z-index: 2;
     }
 
-    #feature {
-        background-image: url('img/feature.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 550px;
-        width: 100%;
+    #three {
+        right: -10%;
+        z-index: 1;
     }
 
-    #activity {
-        background-image: url('img/activity.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 600px;
-        width: 100%;
-    }
-
-    #subscribe{
-    	background-image: url('img/subscribe.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 600px;
-        width: 100%;
-    }
-
-    .tabs-transparent .indicator,
-    .tabs .indicator {
-        background-color: #ffbf59 !important;
-        height: 6px;
-    }
-
-    .tab a.nav {
-        font-size: 15px !important;
-        font-family: cht-dec;
-    }
-
-    .describe {
-        font-family: cht-dec;
-        line-height: 48px;
-        color: #4a4a4a;
-        size: 20px;
-    }
-
-    underline {
-        line-height: 2px;
-        border-bottom: solid 2px #ffb133;
-    }
-
-    @eng-font {
-        font-family: eng-dec;
-        src: url(font/Calibri/CalibriBoldItalic.ttf);
-    }
-
-    @cht-font {
-        font-family: cht-dec;
-        src: url(font/PingFang.ttc);
-    }
-
-    .row {
-        margin-bottom: 0px !important;
-    }
-
-    .START {
-        font-size: 40px !important;
-        line-height: 32px !important;
-    }
+    .slide {}
     </style>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.tabs').tabs();
-    });
-    </script>
 </head>
 
 <body>
     <header>
-        <div class="transparent black-text row" style="margin-top:5em;">
-            <a href="#" class="brand-logo col offset-m2 m2"><img src="img/logo.png"></a>
-            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-            <ul class="tabs col m6 offset-m2" style="">
-                <li class="tab"><a href="#" class="active black-text nav">講師介紹</a></li>
-                <li class="tab"><a href="#" class="black-text nav">活動特色</a></li>
-                <li class="tab"><a href="#" class="black-text nav">活動內容</a></li>
-                <li class="tab"><a href="#" class="black-text nav">關於沐懷</a></li>
-                <li class="tab"><a href="#" class="black-text nav">訂閱</a></li>
-            </ul>
-        </div>
-        <!-- </nav> -->
+        <nav style="background-color:white">
+            <div class="nav-wrapper container blue-text text-darken-2">
+                <a href="#" class="brand-logo black-text">Mu Wide</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="" class="black-text" onmouseover="$(this).text('Heart')" onmouseleave="$(this).text('初心')">初心</a></li>
+                    <li><a href="" class="black-text" onmouseover="$(this).text('Design')" onmouseleave="$(this).text('設計')">設計</a></li>
+                    <li><a href="" class="black-text" onmouseover="$(this).text('Change')" onmouseleave="$(this).text('改變')">改變</a></li>
+                    <li><a href="" class="black-text" onmouseover="$(this).text('Mentor')" onmouseleave="$(this).text('導師')">導師</a></li>
+                    <li><a href="" class="black-text" onmouseover="$(this).text('Act')" onmouseleave="$(this).text('行動')">行動</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <div id="cover" class="row">
-        </div>
-        <div class="valign-wrapper">
-            <div id="incentive" class="white row" style="margin-top:8em;">
-                <p class="left-align col m6 offset-m3" style="font-size: 40px;font-family:eng-dec;">Why Life Design?</p>
-                <p class="flow-text left-align col m6 offset-m3 describe">我們正勇敢的畫出
-                    <underline>那無限可能的自己</underline>
-                    <br>如果 ….打開了所有的可能性，我，會變成怎麼樣的我？
-                    <br>突破框架、跨越限制，我，
-                    <underline>會變成怎麼樣的我？</underline>
-                    <br>我們何時需要開始改變？
-                    <underline>如果不是現在，那又是何時？</underline>
-                    <br>在邁向無限可能的道路上，我們需要怎麼樣的力量
-                    <br>是誰決定著未來方向的對與錯， 又或 對與錯並不存在？
-                </p>
+        <div class="row" style="height:500px;">
+            <div id="one" class="slide">
+                <img src="images/Why2.png">
+            </div>
+            <div id="two" class="slide">
+                <img src="images/Why2.png">
+            </div>
+            <div id="three" class="slide">
+                <img src="images/Why2.png">6
             </div>
         </div>
-        <div id="speaker" class="row"></div>
-        <div id="feature" class="row">
-            <p class="center col m12" style="padding-top:4em;"><span style="font-size: 40px;font-family:cht-dec;border-bottom: solid 4px #4a4a4a">活動特色</span></p>
-            <ul class="tabs col m6 offset-m4 tabs-transparent" style="margin-top:5em;">
-                <li class="tab"><a href="#S" class="active black-text START">S</a></li>
-                <li class="tab"><a href="#T" class="black-text START">T</a></li>
-                <li class="tab"><a href="#A" class="black-text START">A</a></li>
-                <li class="tab"><a href="#R" class="black-text START">R</a></li>
-                <li class="tab"><a href="#T2" class="black-text START">T</a></li>
-            </ul>
-            <div class="col m6 offset-m4" style="margin-top:3em;font-size:20px ">
-                <div id="S">Stanford Methodology
-                    <br>史丹福大學的創新方法學</div>
-                <div id="T">Talent and Team
-                    <br>聚集人才與建構團隊</div>
-                <div id="A">Aim to Action
-                    <br>明確目標與實際行動</div>
-                <div id="R">Revolution
-                    <br>正向力量與正向改變</div>
-                <div id="T2">Tailored for you
-                    <br>專屬於正往夢想前進的您</div>
+        <div class="row">
+            <div class="col s2 offset-s5 center-align">
+                <a class="waves-effect waves-light btn white black-text sliding-link" href="#four">往下</a>
             </div>
         </div>
-        <div id="activity"></div>
-        <div class="valign-wrapper">
-            <div id="about" class="white row" style="margin-top:1em;">
-                <p class="center" style="padding:2em;"><span style="font-size: 35px;font-family:cht-dec;border-bottom: solid 4px #4a4a4a">關於沐懷</span></p>
-                <p class="left-align col m6 offset-m3" style="font-family: cht-dec;line-height: 31px;color: #4a4a4a;size: 20px;">過去十年來，沐懷持續關注 健康、醫療、創新與新創、未來教育、未來科技 等重要議題，主導跨領域的合作案，並舉辦各類型的互動式活動。
-                    <br><br><br>透過史丹福大學及灣區的 - 設計思考（Design Thinking）、衝刺計劃（SPRINT）、精實創業（Lean Startup）等創新方法學，帶給 「個人、團隊、生態圈」 正向的改變。
-                </p>
-                <a href="#" class="brand-logo col offset-m5 m2" style="margin-top:3em"><img src="img/logo.png"></a>
+        <div id="four" class="row" style="height: 800px;">
+            <img class="left-align" style="position: absolute;top:80%;left:-30%" src="images/Why2.png">
+            <div class="center-align" style="position: absolute;right:300px;top:80%;right:-30%">
+                <div class="card-panel teal">
+                    <span class="white-text">一些資訊：人事時地物</span>
+                </div>
             </div>
         </div>
-        <div id="subscribe" class="row">
-        	 <p class="center white-text" style="padding-top:5em;"><span style="font-size: 35px;font-family:cht-dec;border-bottom: solid 4px white;">訂閱沐懷</span></p>
-        	 <p class="center white-text" style="padding-top:2em;font-size: 18px">搶先獲得沐懷最新消息</p>
-        	 <div></div>
-        	 <div></div>
-        	 <div></div>
+        <div class="row">
+            <div class="col s2 offset-s5 center-align">
+                <a class="waves-effect waves-light btn white black-text sliding-link" href="#five">往下</a>
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="row valign-wrapper" id="five" style="height:800px;">
+            <div class="col offset-s3 s6 offset-m3 m6 center-align">
+                <div class="card blue-grey darken-1">
+                    <div class="card-panel teal">
+                        <div class="input-field col s12">
+                            <input placeholder="Dr." id="first_name" type="text" class="validate">
+                            <label for="first_name">Dr.</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Email" id="last_name" type="text" class="validate">
+                            <label for="last_name">Email</label>
+                        </div>
+                        <span class="white-text">進一步了解資訊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer></footer>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#two').hover(
+            function() { $("#one").animate({ right: '60%' }, 'slow'); },
+            function() { $("#one").animate({ right: '30%' }, 'slow'); }
+        );
+        $('#three').hover(
+            function() {
+                $("#two").animate({ right: '50%' }, 'slow');
+                $("#one").animate({ right: '80%' }, 'slow');
+            },
+            function() {
+                $("#two").animate({ right: '10%' }, 'slow');
+                $("#one").animate({ right: '30%' }, 'slow');
+            }
+        );
+        $(".sliding-link").click(function(e) {
+            var aid = $(this).attr("href");
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                 $("#four img").animate({left:70, opacity:"show"}, 1500);
+                 $("#four div").animate({right:70, opacity:"show"}, 1500);
+            };
+        });
+    });
+    </script>
 </body>
 
 </html>
