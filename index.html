@@ -14,240 +14,26 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <style type="text/css">
-    body {}
-
     #cover {
-        background-image: url('img/cover.png');
+        background-image: url('img/full-page.png');
         background-repeat: no-repeat;
         background-attachment: cover;
         background-position: center;
-        background-size: 100%;
-        min-height: 850px;
+        background-size: 100% 100%;
+        /*height: 100%;*/
         width: 100%;
-    }
-
-    #incentive {
-        width: 100%;
-        min-height: 550px;
-    }
-
-    #speaker {
-        background-image: url('img/speaker.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: top;
-        background-size: 100% auto;
-        min-height: 800px;
-        width: 100%;
-    }
-
-    #feature {
-        background-image: url('img/feature.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 550px;
-        width: 100%;
-    }
-
-    #activity {
-        background-image: url('img/activity.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 600px;
-        width: 100%;
-    }
-
-    #subscribe {
-        background-image: url('img/subscribe.png');
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        background-position: center;
-        background-size: 100%;
-        min-height: 600px;
-        width: 100%;
-    }
-
-    .tabs-transparent .indicator,
-    .tabs .indicator {
-        background-color: #ffbf59 !important;
-        height: 6px;
-    }
-
-    .tab a.nav {
-        font-size: 15px !important;
-        font-family: cht-dec;
-    }
-
-    ul.start-title .tab {
-        height: 100px;
-    }
-
-    ul.start-title .tab a {
-        width: 60%;
-    }
-
-    .describe {
-        font-family: cht-dec;
-        line-height: 48px;
-        color: #4a4a4a;
-        size: 20px;
-    }
-
-    underline {
-        line-height: 2px;
-        border-bottom: solid 2px #ffb133;
-    }
-
-    .blodItaCal {
-        /*src: local(font/Calibri/CalibriBoldItalic.ttf);*/
-        font-family: Calibri;
-        font-size: 39px;
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #4a4a4a;
-    }
-
-    .cht-font {
-        font-family: PingFangTC;
-        font-size: 22px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 2.1;
-        letter-spacing: normal;
-    }
-
-    .row {
-        margin-bottom: 0px !important;
-    }
-
-    .START {
-        font-size: 80px !important;
-        letter-spacing: 40px;
-        line-height: 80px !important;
     }
     </style>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('.tabs').tabs();
+        var CoverWidth = $('#cover').width();
+        $('#cover').height(CoverWidth * 4.84);
     });
     </script>
 </head>
 
 <body>
-    <header>
-        <div class="transparent black-text row" style="margin-top:5em;">
-            <a href="#" class="brand-logo col offset-m2 m2"><img src="img/logo.png"></a>
-            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-            <ul class="tabs col m6 offset-m2" style="">
-                <li class="tab"><a href="#" class="active black-text nav">講師介紹</a></li>
-                <li class="tab"><a href="#" class="black-text nav">活動特色</a></li>
-                <li class="tab"><a href="#" class="black-text nav">活動內容</a></li>
-                <li class="tab"><a href="#" class="black-text nav">關於沐懷</a></li>
-                <li class="tab"><a href="#" class="black-text nav">訂閱</a></li>
-            </ul>
-        </div>
-        <!-- </nav> -->
-    </header>
-    <main>
-        <div id="cover" class="row">
-        </div>
-        <div class="valign-wrapper">
-            <div id="incentive" class="white row" style="margin-top:8em;">
-                <p class="left-align col m6 offset-m3 blodItaCal" style="font-size: 40px;">Why Life Design?</p>
-                <p class="flow-text left-align col m6 offset-m3 describe cht-font">我們正勇敢的畫出
-                    <underline>那無限可能的自己</underline>
-                    <br>如果 ….打開了所有的可能性，我，會變成怎麼樣的我？
-                    <br>突破框架、跨越限制，我，
-                    <underline>會變成怎麼樣的我？</underline>
-                    <br>我們何時需要開始改變？
-                    <underline>如果不是現在，那又是何時？</underline>
-                    <br>在邁向無限可能的道路上，我們需要怎麼樣的力量
-                    <br>是誰決定著未來方向的對與錯， 又或 對與錯並不存在？
-                </p>
-            </div>
-        </div>
-        <div id="speaker" class="row"></div>
-        <div id="feature" class="row">
-            <p class="center col m12 " style="padding-top:4em;"><span style="font-size: 40px;border-bottom: solid 4px #4a4a4a">活動特色</span></p>
-            <ul class="tabs col m8 offset-m2 center tabs-transparent center start-title" style="margin-top:5em;min-height: 80px">
-                <li class="tab"><a href="#S" class="active black-text START">S</a></li>
-                <li class="tab"><a href="#T" class="black-text START">T</a></li>
-                <li class="tab"><a href="#A" class="black-text START">A</a></li>
-                <li class="tab"><a href="#R" class="black-text START">R</a></li>
-                <li class="tab"><a href="#T2" class="black-text START">T</a></li>
-            </ul>
-            <div class="col m6 offset-m3" style="margin-top:3em;font-size:20px ">
-                <div id="S">Stanford Methodology
-                    <br>史丹福大學的創新方法學</div>
-                <div id="T">Talent and Team
-                    <br>聚集人才與建構團隊</div>
-                <div id="A">Aim to Action
-                    <br>明確目標與實際行動</div>
-                <div id="R">Revolution
-                    <br>正向力量與正向改變</div>
-                <div id="T2">Tailored for you
-                    <br>專屬於正往夢想前進的您</div>
-            </div>
-        </div>
-        <div id="activity"></div>
-        <div class="valign-wrapper">
-            <div id="about" class="white row" style="margin-top:1em;">
-                <p class="center" style="padding:2em;"><span style="font-size: 35px;font-family:cht-dec;border-bottom: solid 4px #4a4a4a">關於沐懷</span></p>
-                <p class="left-align col m6 offset-m3" style="font-family: cht-dec;line-height: 31px;color: #4a4a4a;size: 20px;">過去十年來，沐懷持續關注 健康、醫療、創新與新創、未來教育、未來科技 等重要議題，主導跨領域的合作案，並舉辦各類型的互動式活動。
-                    <br>
-                    <br>
-                    <br>透過史丹福大學及灣區的 - 設計思考（Design Thinking）、衝刺計劃（SPRINT）、精實創業（Lean Startup）等創新方法學，帶給 「個人、團隊、生態圈」 正向的改變。
-                </p>
-                <a href="#" class="brand-logo col offset-m5 m2" style="margin-top:3em"><img src="img/logo.png"></a>
-            </div>
-        </div>
-        <div id="subscribe" class="row">
-            <p class="center white-text" style="padding-top:5em;"><span style="font-size: 35px;font-family:cht-dec;border-bottom: solid 4px white;">訂閱沐懷</span></p>
-            <p class="center white-text" style="padding-top:2em;font-size: 18px">搶先獲得沐懷最新消息</p>
-            <div class="row">
-                <div class="col m1 offset-m4 cht-font white-text left-align">姓名</div>
-                <div class="col m4 cht-font" style="border:solid 2px #ffffff;border-radius: 20px">
-                    <input placeholder="我們該怎麼稱呼您呢？" id="name" type="" class="default" style="background:transparent;border:0;font-size:16px">
-                </div>
-            </div>
-            <div class="row" style="margin-top:1em">
-                <div class="col m1 offset-m4 cht-font white-text left-align">email</div>
-                <div class="col m4 cht-font" style="border:solid 2px #ffffff;border-radius: 20px">
-                    <input placeholder="我們該怎麼找到您呢？" id="email" type="" class="default" style="background:transparent;border:0;font-size:16px">
-                </div>
-            </div>
-            <div class="row" style="margin-top:1em">
-                <div class="col m1 offset-m4 cht-font white-text left-align">關於自己</div>
-                <div class="col m4 cht-font" style="border:solid 2px #ffffff;border-radius: 20px">
-                    <input placeholder="介紹一下自己吧！" id="name" type="" class="default" style="background:transparent;border:0;font-size:16px;height: 10em;">
-                </div>
-            </div>
-        </div>
-        <div class="footer row white" style="height:6em">
-            <div class="col offset-m10 m2">
-                <br>
-                <!-- FB -->
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="px" width="50" height="50" viewBox="0 0 24 24" style="fill:#000000;">
-                    <g id="surface1">
-                        <path style=" " d="M 20 2 L 4 2 C 2.898438 2 2 2.898438 2 4 L 2 20 C 2 21.101563 2.898438 22 4 22 L 20 22 C 21.101563 22 22 21.101563 22 20 L 22 4 C 22 2.898438 21.101563 2 20 2 Z M 18.398438 7.398438 L 17 7.398438 C 16.101563 7.398438 16 7.699219 16 8.398438 L 16 9.699219 L 18.101563 9.699219 L 18 12 L 16.101563 12 L 16.101563 19 L 12.898438 19 L 12.898438 12 L 11.699219 12 L 11.699219 9.601563 L 12.898438 9.601563 L 12.898438 8.101563 C 12.898438 6.101563 13.699219 5 16 5 L 18.398438 5 Z "></path>
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24" style="fill:white;background-color: black">
-                    <g id="surface2">
-                        <path style=" " d="M 22 6 L 21.210938 6 C 20.914063 6 20.5 6.429688 20.5 6.703125 L 20.5 17.351563 C 20.5 17.625 20.914063 18 21.210938 18 L 22 18 L 22 20 L 15 20 L 15 18 L 16 18 L 16 8 L 13 20 L 10.046875 20 L 7 8 L 7 18 L 8 18 L 8 20 L 2 20 L 2 18 L 3 18 C 3.316406 18 3.730469 17.625 3.730469 17.351563 L 3.730469 6.703125 C 3.730469 6.429688 3.316406 6 3 6 L 2 6 L 2 4 L 10 4 L 12 13 L 14 4 L 22 4 Z "></path>
-                    </g>
-                </svg>
-            </div>
-        </div>
-    </main>
+    <main id="cover"></main>
 </body>
 
 </html>
