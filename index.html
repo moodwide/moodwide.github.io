@@ -7,12 +7,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
     <style type="text/css">
     .fullWidth {
         background-repeat: no-repeat;
@@ -22,6 +22,31 @@
         width: 100%;
     }
     </style>
+</head>
+
+<body>
+    <main>
+        <div id="cover" class="fullWidth"></div>
+        <div id="why" class="fullWidth"></div>
+        <div id="because" class="fullWidth"></div>
+        <div id="what" class="fullWidth"></div>
+        <div id="speaker" class="fullWidth">
+        </div>
+        <div id="course" class="fullWidth">
+            <a href="#contact" style="margin-left: 73.58%;">
+                <img src="asset/img/interested.png" style="height:5.57%;margin-top:50.51%;">
+            </a>
+        </div>
+        <div id="slogan" class="fullWidth"></div>
+        <div id="contact" class="fullWidth">
+            <form style="text-align: center;" action="mailto:drchi@stanford.edu">
+                <input type="email" name="contact" value="" style="color:rgba(255, 255, 255, 0.75);background-color: transparent;margin-top: 27.5%;border: 0;width:25vw">
+                <br>
+                <input type="submit" value="" style="background-color:transparent;border:none;">
+            </form>
+        </div>
+        <div id="moodwide" class="fullWidth"></div>
+    </main>
     <script type="text/javascript">
     $(document).ready(function() {
         function fullHeight(TargetID, heightValue) {
@@ -41,22 +66,12 @@
         fullHeight('slogan', 631);
         fullHeight('contact', 598.4);
         fullHeight('moodwide', 546.6);
+
+        function showHoverSpeaker(SpeakerName) {
+
+        };
     });
     </script>
-</head>
-
-<body>
-    <main>
-        <div id="cover" class="fullWidth"></div>
-        <div id="why" class="fullWidth"></div>
-        <div id="because" class="fullWidth"></div>
-        <div id="what" class="fullWidth"></div>
-        <div id="speaker" class="fullWidth"></div>
-        <div id="course" class="fullWidth"></div>
-        <div id="slogan" class="fullWidth"></div>
-        <div id="contact" class="fullWidth"></div>
-        <div id="moodwide" class="fullWidth"></div>
-    </main>
 </body>
 
 </html>
