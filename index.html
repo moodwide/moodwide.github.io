@@ -14,26 +14,47 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <style type="text/css">
-    #cover {
-        background-image: url('img/full-page.png');
+    .fullWidth {
         background-repeat: no-repeat;
         background-attachment: cover;
         background-position: center;
         background-size: 100% 100%;
-        /*height: 100%;*/
         width: 100%;
     }
     </style>
     <script type="text/javascript">
     $(document).ready(function() {
-        var CoverWidth = $('#cover').width();
-        $('#cover').height(CoverWidth * 4.84);
+        function fullHeight(TargetID, heightValue) {
+            $('#' + TargetID).css("background-image", "url('asset/img/" + TargetID + ".png')");
+            var widthValue = $('#' + TargetID).width();
+            // var CoverWidth = $('#cover').width();
+            $('#' + TargetID).height(widthValue / 1200 * heightValue);
+            // $('#cover').height(CoverWidth * 714 / 1200);
+        };
+
+        fullHeight('cover', 714);
+        fullHeight('why', 526);
+        fullHeight('because', 553);
+        fullHeight('what', 688);
+        fullHeight('course', 718);
+        fullHeight('slogan', 688);
+        fullHeight('contact', 598.4);
+        fullHeight('moodwide', 546.6);
     });
     </script>
 </head>
 
 <body>
-    <main id="cover"></main>
+    <main>
+        <div id="cover" class="fullWidth"></div>
+        <div id="why" class="fullWidth"></div>
+        <div id="because" class="fullWidth"></div>
+        <div id="what" class="fullWidth"></div>
+        <div id="course" class="fullWidth"></div>
+        <div id="slogan" class="fullWidth"></div>
+        <div id="contact" class="fullWidth"></div>
+        <div id="moodwide" class="fullWidth"></div>
+    </main>
 </body>
 
 </html>
