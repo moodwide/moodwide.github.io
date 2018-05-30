@@ -9,7 +9,7 @@
     <meta name="description" content="每個人都值得過一個美好人生，讓我們用心規畫它、全然擁抱它。">
     <!-- 藉由從Standford帶回的方法學，讓我們拓展人生的可能性、找到新方向並踏出第一步，一同重新設計人生 -->
     <meta name="keywords" content="Life,Life Design,possibility,Design,workshop,Design Thinking,Taiwan,台灣,設計思考,設計,人生設計,人生,生命,生涯,生涯,職涯,可能性,拓展,工作坊">
-     <meta name="author" content="Soniabeeeee&Georgech3">
+    <meta name="author" content="Soniabeeeee&Georgech3">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -27,6 +27,14 @@
     }
 
     .fullWidth {
+        background-repeat: no-repeat;
+        background-attachment: cover;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+
+    .fullHeight {
         background-repeat: no-repeat;
         /*background-attachment: cover;*/
         background-position: top;
@@ -76,93 +84,117 @@
 
 <body>
     <main>
-        <ul id="slide-out" class="sidenav section table-of-contents">
-            <li>
-                <!-- <div class="user-view"> -->
-                <!-- <div class="background"> -->
-                <img src="asset/img-m/sideNav-logo.png" style="width: 66.7%;height: auto;position: absolute;top:3.75%;right:17.33%">
-                <img src="asset/img-m/sideNav-logo.png" style="width: 80%;height: auto;opacity: 0">
-                <!-- </div> -->
-                <!-- </div> -->
-            </li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a href="#cover" class="sidenav-close">活動介紹</a></li>
-            <li style="display:none"><a href="#why" class="sidenav-close">活動介紹</a></li>
-            <li style="display:none"><a href="#because" class="sidenav-close">參與動機</a></li>
-            <li><a href="#what" class="sidenav-close">活動特色</a></li>
-            <li><a href="#speaker" class="sidenav-close">講師陣容</a></li>
-            <li><a href="#course" class="sidenav-close">活動內容</a></li>
-            <li><a href="#where" class="sidenav-close">活動地點</a></li>
-            <li style="display:none"><a href="#slogan" class="sidenav-close">心靈標語</a></li>
-            <li><a href="#contact" class="sidenav-close">訂閱沐懷</a></li>
-            <li><a href="#moodwide" class="sidenav-close">關於沐懷</a></li>
-            <li><a href="#" class="sidenav-close" style="color:rgb(255,177,51)">立即報名</a></li>
-        </ul>
-        <div>
-            <a id="hamburger" href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; top:4.8%;left:6.67%;width:8%;z-index: 9999;"><img src="asset/img-m/ham_s.png" style="width:100%">
+        <div class="hide-on-small-only show-on-medium-and-up">
+            <div id="cover" class="fullWidth"></div>
+            <div id="why" class="fullWidth"></div>
+            <div id="because" class="fullWidth"></div>
+            <div id="what" class="fullWidth"></div>
+            <div id="speaker" class="fullWidth">
+            </div>
+            <div id="course" class="fullWidth">
+                <a href="#contact" style="margin-left: 73.58%;">
+                <img src="asset/img/interested.png" style="height:5.57%;margin-top:50.51%;">
             </a>
-            <a id="next-section" style="position: fixed; bottom:4.8%;left:46%;width:8%;z-index: 9999;">
+            </div>
+            <div id="slogan" class="fullWidth"></div>
+            <div id="contact" class="fullWidth">
+                <form style="text-align: center;" action="mailto:drchi@stanford.edu">
+                    <input type="email" name="contact" value="" style="color:rgba(255, 255, 255, 0.75);background-color: transparent;margin-top: 27.5%;border: 0;width:25vw">
+                    <br>
+                    <input type="submit" value="" style="background-color:transparent;border:none;">
+                </form>
+            </div>
+            <div id="moodwide" class="fullWidth"></div>
+        </div>
+        <div class="show-on-small hide-on-med-and-up">
+            <ul id="slide-out" class="sidenav section table-of-contents">
+                <li>
+                    <!-- <div class="user-view"> -->
+                    <!-- <div class="background"> -->
+                    <img src="asset/img-m/sideNav-logo.png" style="width: 66.7%;height: auto;position: absolute;top:3.75%;right:17.33%">
+                    <img src="asset/img-m/sideNav-logo.png" style="width: 80%;height: auto;opacity: 0">
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a href="#cover-m" class="sidenav-close">活動介紹</a></li>
+                <li style="display:none"><a href="#why-m" class="sidenav-close">活動介紹</a></li>
+                <li style="display:none"><a href="#because-m" class="sidenav-close">參與動機</a></li>
+                <li><a href="#what-m" class="sidenav-close">活動特色</a></li>
+                <li><a href="#speaker-m" class="sidenav-close">講師陣容</a></li>
+                <li><a href="#course-m" class="sidenav-close">活動內容</a></li>
+                <li><a href="#where-m" class="sidenav-close">活動地點</a></li>
+                <li style="display:none"><a href="#slogan-m" class="sidenav-close">心靈標語</a></li>
+                <li><a href="#contact-m" class="sidenav-close">訂閱沐懷</a></li>
+                <li><a href="#moodwide-m" class="sidenav-close">關於沐懷</a></li>
+                <li><a href="#" class="sidenav-close" style="color:rgb(255,177,51)">立即報名</a></li>
+            </ul>
+            <div>
+                <a id="hamburger" href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; top:4.8%;left:6.67%;width:8%;z-index: 9999;"><img src="asset/img-m/ham_s.png" style="width:100%">
+            </a>
+                <a id="next-section" style="position: fixed; bottom:4.8%;left:46%;width:8%;z-index: 9999;">
                 <img src="asset/img-m/next.png" style="width:100%">
             </a>
-        </div>
-        <div id="cover" class="fullWidth section scrollspy">
-            <img src="asset/img-m/logo.png" style="width: 32.32%;height: auto;position: absolute;right:5.4%;top:3%">
-            <img src="asset/img-m/cover-slogan.png" style="width: 88%;height: auto;position: absolute;left:6%;top:31%">
-        </div>
-        <div id="why" class="fullWidth section scrollspy">
-            <img src="asset/img-m/why-text.png" style="width:72%;position: absolute;left:15.5%;top:136%">
-            <img src="asset/img-m/why-title.png" style="width:68.37%;height:auto;position: absolute;left:13%;top:126.3%">
-        </div>
-        <div id="because" class="fullWidth section scrollspy">
-            <img src="asset/img-m/because-text.png" style="width:74%;height:auto;position: absolute;left:13%;top:228%">
-        </div>
-        <div id="what" class="fullWidth section scrollspy">
-            <img src="asset/img-m/what-title.png" style="width:82%;height:auto;position: absolute;right:10%;top:314.7%">
-            <img src="asset/img-m/what-text.png" style="width:82%;height:auto;position: absolute;left:8%;top:328%">
-        </div>
-        <div id="speaker" class="fullWidth section scrollspy">
-            <img src="asset/img-m/speaker-title.png" style="width:24.2%;height:auto;position: absolute;left:38%;top:405.7%">
-            <div class="carousel carousel-slide" style="height:100%">
-                <a class="carousel-item" href="#one!">
-                    <button data-target="chi-pop" class="btn modal-trigger" style="position: absolute;top:20%;left:10%;width:80%;height:130%;opacity:0;">Modal chi</button>
-                    <img src="asset/img-m/speaker-chi.png">
-                </a>
-                <a class="carousel-item" href="#two!">
+            </div>
+            <div id="cover-m" class="fullHeight section scrollspy">
+                <img src="asset/img-m/logo.png" style="width: 32.32%;height: auto;position: absolute;right:5.4%;top:3%">
+                <img src="asset/img-m/cover-slogan.png" style="width: 88%;height: auto;position: absolute;left:6%;top:31%">
+            </div>
+            <div id="why-m" class="fullHeight section scrollspy">
+                <img src="asset/img-m/why-text.png" style="width:72%;position: absolute;left:15.5%;top:136%">
+                <img src="asset/img-m/why-title.png" style="width:68.37%;height:auto;position: absolute;left:13%;top:126.3%">
+            </div>
+            <div id="because-m" class="fullHeight section scrollspy">
+                <img src="asset/img-m/because-text.png" style="width:74%;height:auto;position: absolute;left:13%;top:228%">
+            </div>
+            <div id="what-m" class="fullHeight section scrollspy">
+                <img src="asset/img-m/what-title.png" style="width:82%;height:auto;position: absolute;right:10%;top:314.7%">
+                <img src="asset/img-m/what-text.png" style="width:82%;height:auto;position: absolute;left:8%;top:328%">
+            </div>
+            <div id="speaker-m" class="fullHeight section scrollspy">
+                <img src="asset/img-m/speaker-title.png" style="width:24.2%;height:auto;position: absolute;left:38%;top:405.7%">
+                <div class="carousel carousel-slide" style="height:100%">
+                    <a class="carousel-item" href="#one!">
+                        <button data-target="chi-pop" class="btn modal-trigger" style="position: absolute;top:20%;left:10%;width:80%;height:130%;opacity:0;">Modal chi</button>
+                        <img src="asset/img-m/speaker-chi.png">
+                    </a>
+                    <a class="carousel-item" href="#two!">
                     <img src="asset/img-m/speaker-emma.png">
                     <button data-target="emma-pop" class="btn modal-trigger" style="position: absolute;top:20%;left:10%;width:80%;height:130%;opacity:0;">Modal emma</button>
                 </a>
-                <a class="carousel-item" href="#three!">
+                    <a class="carousel-item" href="#three!">
                     <img src="asset/img-m/speaker-john.png">
                     <button data-target="john-pop" class="btn modal-trigger" style="position: absolute;top:20%;left:10%;width:80%;height:130%;opacity:0;">Modal john</button>
                 </a>
-                <div id="chi-pop" class="modal transparent pop-up">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
-                    <img src="asset/img-m/speaker-chi-pop.png" style="">
-                </div>
-                <div id="emma-pop" class="modal transparent pop-up">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
-                    <img src="asset/img-m/speaker-emma-pop.png" style="">
-                </div>
-                <div id="john-pop" class="modal transparent pop-up">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
-                    <img src="asset/img-m/speaker-john-pop.png" style="">
+                    <div id="chi-pop" class="modal transparent pop-up">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
+                        <img src="asset/img-m/speaker-chi-pop.png" style="">
+                    </div>
+                    <div id="emma-pop" class="modal transparent pop-up">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
+                        <img src="asset/img-m/speaker-emma-pop.png" style="">
+                    </div>
+                    <div id="john-pop" class="modal transparent pop-up">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat right white-text">X</a>
+                        <img src="asset/img-m/speaker-john-pop.png" style="">
+                    </div>
                 </div>
             </div>
-            <div id="course" class="fullWidth section scrollspy">
+            <div id="course-m" class="fullHeight section scrollspy">
                 <img src="asset/img-m/course-title.png" style="width:20.8%;height:auto;position: absolute;left:39.6%;top:505.7%">
                 <img src="asset/img-m/course-text.png" style="width:72%;height:auto;position: absolute;left:10%;top:515%">
             </div>
-            <div id="where" class="fullWidth section scrollspy">
+            <div id="where-m" class="fullHeight section scrollspy">
                 <img src="asset/img-m/where-title.png" style="width:20.8%;height:auto;position: absolute;left:39.6%;top:605.7%">
                 <img src="asset/img-m/where-text-1.png" style="width:73%;height:auto;position: absolute;left:10%;top:635%">
                 <img src="asset/img-m/where-text-2.png" style="width:73%;height:auto;position: absolute;left:10%;top:668.11%">
             </div>
-            <div id="slogan" class="fullWidth section scrollspy">
+            <div id="slogan-m" class="fullHeight section scrollspy">
                 <img src="asset/img-m/slogan-text.png" style="width:76.5%;height:auto;position: absolute;left:12%;top:741.08%">
             </div>
-            <div id="contact" class="fullWidth section scrollspy">
+            <div id="contact-m" class="fullHeight section scrollspy">
                 <img src="asset/img-m/subscribe-title.png" style="width:26%;height:auto;position: absolute;left:37.3%;top:805.7%">
                 <p class="center white-text" style="font-weight: 300;width:60%;height:auto;position: absolute;left:20%;top:841.3%">搶先獲得沐懷相關資訊</p>
                 <form style="text-align: center;" action="mailto:drchi@stanford.edu">
@@ -173,22 +205,24 @@
                 </form>
                 <img src="asset/img-m/contact-btn.png" style="width:24%;height:auto;position: absolute;left:38%;top:865.7%">
             </div>
-            <div id="moodwide" class="fullWidth section scrollspy">
+            <div id="moodwide-m" class="fullHeight section scrollspy">
                 <img src="asset/img-m/moodwide-title.png" style="width:44.8%;height:auto;position: absolute;left:27.7%;top:905.7%">
                 <img src="asset/img-m/moodwide-text.png" style="width:82%;height:auto;position: absolute;left:10%;top:932%">
                 <img src="asset/img-m/moodwide-logo.png" style="width:28%;height:auto;position: absolute;left:36%;top:972%">
             </div>
+        </div>
     </main>
     <script type="text/javascript">
     var heightValue = $(window).height();
     var activeSectionIndex = 1;
-    $('.fullWidth').height(heightValue);
+    $('.fullHeight').height(heightValue);
 
     function fullHeight(TargetID, heightValue) {
         $('#' + TargetID).css("background-image", "url('asset/img-m/" + TargetID + ".png')");
     };
 
     $(document).ready(function() {
+        // for mobile
         function adjustPage(nowY) {
             var minY = i * heightValue;
             var maxY = i * heightValue;
@@ -206,16 +240,16 @@
                 $('#next-section').hide();
             };
         });
-        fullHeight('cover');
-        fullHeight('why');
-        fullHeight('because');
-        fullHeight('what');
-        fullHeight('course');
-        fullHeight('where');
-        fullHeight('speaker');
-        fullHeight('slogan');
-        fullHeight('contact');
-        fullHeight('moodwide');
+        fullHeight('cover-m');
+        fullHeight('why-m');
+        fullHeight('because-m');
+        fullHeight('what-m');
+        fullHeight('course-m');
+        fullHeight('where-m');
+        fullHeight('speaker-m');
+        fullHeight('slogan-m');
+        fullHeight('contact-m');
+        fullHeight('moodwide-m');
         $('.scrollspy').scrollSpy({
             scrollOffset: 0,
             getActiveElement: function(id) {
@@ -226,8 +260,24 @@
         $('.sidenav').sidenav();
         $('.carousel').carousel({ padding: 100, indicators: true });
         $('.modal').modal();
+        // for tablet and up
+         function fullWidth(TargetID, heightValue) {
+            $('#' + TargetID).css("background-image", "url('asset/img/" + TargetID + ".png')");
+            var widthValue = $('#' + TargetID).width();
+            // var CoverWidth = $('#cover').width();
+            $('#' + TargetID).height(widthValue / 1200 * heightValue);
+            // $('#cover').height(CoverWidth * 714 / 1200);
+        };
 
-        // $('#next-section').click();
+        fullWidth('cover', 714);
+        fullWidth('why', 526);
+        fullWidth('because', 553);
+        fullWidth('what', 688);
+        fullWidth('speaker', 844);
+        fullWidth('course', 718);
+        fullWidth('slogan', 631);
+        fullWidth('contact', 598.4);
+        fullWidth('moodwide', 546.6);
     });
     </script>
 </body>
