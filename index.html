@@ -246,14 +246,16 @@
             };
         };
         $('#menu-logo').css("font-size", $('#hamburger').width());
-        $('#next-section').click(function() {
-            $('.sidenav-close')[++activeSectionIndex].click();
+        $('.sidenav-close').on('click',function(){
             if (activeSectionIndex < 9) {
                 $('#next-section').show();
             } else {
                 activeSectionIndex == 9;
                 $('#next-section').hide();
             };
+        });
+        $('#next-section').click(function() {
+            $('.sidenav-close')[++activeSectionIndex].click();
         });
         fullHeight('cover-m');
         fullHeight('why-m');
