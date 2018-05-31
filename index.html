@@ -79,10 +79,21 @@
         height: 100%;
         border-radius: 25px;
     }
+
+    @media (max-width:625px) {
+        body {
+            overflow: hidden
+        }
+    }
+    @media(min-width:625px) {
+        body {
+            overflow: scroll;
+        }
+    }
     </style>
 </head>
 
-<body>
+<body scroll="no" style="">
     <main>
         <div class="hide-on-small-only show-on-medium-and-up">
             <div id="cover" class="fullWidth"></div>
@@ -221,7 +232,11 @@
         $('#' + TargetID).css("background-image", "url('asset/img-m/" + TargetID + ".png')");
     };
 
+    // $(body).css("overflow", "hidden");
+    // $(body).css("overflow", "scroll");
+
     $(document).ready(function() {
+
         // for mobile
         function adjustPage(nowY) {
             var minY = i * heightValue;
@@ -261,7 +276,7 @@
         $('.carousel').carousel({ padding: 100, indicators: true });
         $('.modal').modal();
         // for tablet and up
-         function fullWidth(TargetID, heightValue) {
+        function fullWidth(TargetID, heightValue) {
             $('#' + TargetID).css("background-image", "url('asset/img/" + TargetID + ".png')");
             var widthValue = $('#' + TargetID).width();
             // var CoverWidth = $('#cover').width();
