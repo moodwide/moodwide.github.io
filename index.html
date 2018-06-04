@@ -24,6 +24,7 @@
         margin: 0;
         height: 100%;
         width: 100%;
+        /*position: fixed;*/
     }
 
     .fullWidth {
@@ -35,8 +36,8 @@
     }
 
     .fullHeight {
-        background-repeat: no-repeat;
         /*background-attachment: cover;*/
+        background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
         /*height: 100%;*/
@@ -82,9 +83,10 @@
 
     @media (max-width:625px) {
         body {
-            overflow: hidden
+            overflow: hidden;
         }
     }
+
     @media(min-width:625px) {
         body {
             overflow: scroll;
@@ -93,7 +95,7 @@
     </style>
 </head>
 
-<body scroll="no" style="">
+<body scroll="no">
     <main>
         <div class="hide-on-small-only show-on-medium-and-up">
             <div id="cover" class="fullWidth"></div>
@@ -143,9 +145,9 @@
                 <li><a href="#" class="sidenav-close" style="color:rgb(255,177,51)">立即報名</a></li>
             </ul>
             <div>
-                <a id="hamburger" href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; top:4.8%;left:6.67%;width:8%;z-index: 9999;"><img src="asset/img-m/ham_s.png" style="width:100%">
+                <a id="hamburger" href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; top:4.8%;left:6.67%;width:8%;z-index: 999;"><img src="asset/img-m/ham_s.png" style="width:100%">
             </a>
-                <a id="next-section" style="position: fixed; bottom:4.8%;left:46%;width:8%;z-index: 9999;">
+                <a id="next-section" style="position: fixed; bottom:4.8%;left:46%;width:8%;z-index: 999;">
                 <img src="asset/img-m/next.png" style="width:100%">
             </a>
             </div>
@@ -246,7 +248,7 @@
             };
         };
         $('#menu-logo').css("font-size", $('#hamburger').width());
-        $('.sidenav-close').on('click',function(){
+        $('.sidenav-close').on('click', function() {
             if (activeSectionIndex < 9) {
                 $('#next-section').show();
             } else {
