@@ -159,8 +159,7 @@
 
 <body scroll="no">
     <main>
-        <!-- <div class="hide-on-small-only show-on-medium-and-up"> -->
-        <div>
+        <div class="hide-on-small-only show-on-medium-and-up">
             <div id="cover" class="fullWidth">
                 <div id="header" class="right fullWidth" style=";background-image: url('asset/img/header.png');position: absolute;width:46%;margin-top:4%;right:2.5%"></div>
                 <nav style="line-height: 0;">
@@ -196,6 +195,7 @@
             <!-- <div id="because" class="fullWidth scrollspy"></div> -->
             <div id="what" class="fullWidth scrollspy"></div>
             <div id="speaker" class="fullWidth scrollspy">
+                <div id="hoverBlock" class="" style="position: absolute;width: 90%;left:10%;margin-top:16%;z-index: 10"></div>
                 <div id="hoverChi" class="hover" style="position: absolute;width: 30%;left:8%;margin-top:16%"></div>
                 <div id="hoverJohn" class="hover" style="position: absolute;width: 30%;left:35%;margin-top:16%"></div>
                 <div id="hoverEmma" class="hover" style="position: absolute;width: 30%;left:65%;margin-top:16%"></div>
@@ -409,6 +409,7 @@
         // fullWidth('because', 447);
         fullWidth('what', 838);
         fullWidth('speaker', 875);
+        $('#hoverBlock').height($('#speaker').height() / 875 * 520);
         $('#hoverChi').height($('#speaker').height() / 875 * 581);
         $('#hoverJohn').height($('#speaker').height() / 875 * 581);
         $('#hoverEmma').height($('#speaker').height() / 875 * 581);
