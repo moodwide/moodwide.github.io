@@ -146,7 +146,7 @@
                 <div id="header" class="right fullWidth" style=";background-image: url('asset/img/header.png');position: absolute;width:46%;margin-top:4%;right:2.5%"></div>
                 <nav style="line-height: 0;">
                     <div class="wrapper">
-                        <ul class="" style="width:48%;height:8%;margin-top:0;position: absolute;right:1%;text-align: right;">
+                        <ul id="navW" style="width:48%;height:8%;margin-top:0;position: absolute;right:1%;text-align: right;">
                             <li><a href="https://www.accupass.com/event/1806060900056395662110" target="_blank" style="margin-right: 25%">人</a></li>
                             <li><a href="https://www.accupass.com/event/1806110616271676248391" target="_blank">人</a></li>
                             <!-- <li><a href="#course">活</a></li> -->
@@ -375,15 +375,16 @@
         function fullWidth(TargetID, heightValue) {
             $('#' + TargetID).css("background-image", "url('asset/img/" + TargetID + ".jpg')");
             var widthValue = $('#' + TargetID).width();
-            // var CoverWidth = $('#cover').width();
             $('#' + TargetID).height(widthValue / 1200 * heightValue);
         };
 
-        $('#header').height($('#header').width() / 541 * 29);
+        $('#header').height($('#header').width() / 1086 * 52);
         // 541:29
+        // 
 
 
         fullWidth('cover', 667);
+        $('#navW').height($('#cover').height() / 667 * 90);
         // fullWidth('why', 471);
         // fullWidth('because', 447);
         fullWidth('what', 838);
