@@ -319,9 +319,9 @@
         </div>
     </main>
     <script type="text/javascript">
-    var heightValue = $(window).height();
+    var WheightValue = $(window).height();
     var activeSectionIndex = 1;
-    $('.fullHeight').height(heightValue);
+    $('.fullHeight').height(WheightValue);
 
     function fullHeight(TargetID, heightValue) {
         $('#' + TargetID).css("background-image", "url('asset/img-m/" + TargetID + ".jpg')");
@@ -344,7 +344,7 @@
         $('#next-section').click(function() {
             $('.sidenav-close')[++activeSectionIndex].click();
         });
-        fullHeight('cover-m');
+        fullHeight('cover-m',);
         fullHeight('what-m');
         fullHeight('course-m', 1274);
         fullHeight('course-m-2', 1274);
