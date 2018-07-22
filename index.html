@@ -321,11 +321,18 @@
     <script type="text/javascript">
     var WheightValue = $(window).height();
     var activeSectionIndex = 1;
-    $('.fullHeight').height(WheightValue);
+    // $('.fullHeight').height(WheightValue);
+    // $('.fullHeight').height(WheightValue);
 
-    function fullHeight(TargetID, heightValue) {
+    // function fullHeight(TargetID, heightValue) {
+    //     $('#' + TargetID).css("background-image", "url('asset/img-m/" + TargetID + ".jpg')");
+    //     $('#' + TargetID).height(heightValue);
+    // };
+
+    function fullWidthM(TargetID, heightValue) {
         $('#' + TargetID).css("background-image", "url('asset/img-m/" + TargetID + ".jpg')");
-        $('#' + TargetID).height(heightValue);
+        var widthValue = $('#' + TargetID).width();
+        $('#' + TargetID).height(widthValue / 375 * heightValue);
     };
 
     // $(body).css("overflow", "hidden");
@@ -344,16 +351,16 @@
         $('#next-section').click(function() {
             $('.sidenav-close')[++activeSectionIndex].click();
         });
-        fullHeight('cover-m',);
-        fullHeight('what-m');
-        fullHeight('course-m', 1274);
-        fullHeight('course-m-2', 1274);
-        fullHeight('speaker-m');
-        fullHeight('partner-m');
-        fullHeight('slogan-m');
-        fullHeight('moodwide-m');
-        fullHeight('team-m', 1816);
-        fullHeight('contact-m');
+        fullWidthM('cover-m', 667);
+        fullWidthM('what-m',667);
+        fullWidthM('course-m', 1174);
+        fullWidthM('course-m-2', 1069);
+        fullWidthM('speaker-m',667);
+        fullWidthM('partner-m',667);
+        fullWidthM('slogan-m',667);
+        fullWidthM('moodwide-m',667);
+        fullWidthM('team-m', 1716);
+        fullWidthM('contact-m',665.9);
         $('.scrollspy').scrollSpy({
             scrollOffset: 0,
             getActiveElement: function(id) {
